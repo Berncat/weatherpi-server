@@ -63,7 +63,7 @@ const database = {
 		try {
 			db = await this.connection(dbInput);
 			const collection = db.collection(collectionInput);
-			const newReading = fs.readJSONSync("/home/ubuntu/weatherServer/IoT/readings.json");
+			const newReading = fs.readJSONSync("/home/ubuntu/weatherpi-server/IoT/readings.json");
 			await collection.insertOne(newReading);
 		} catch (err) {
 			console.error(`we encountered ${err}`);

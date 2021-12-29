@@ -5,42 +5,46 @@
       <tbody>
         <tr>
           <td><i class="clock big icon"></i> Date/Time</td>
-          <td>{{last._id}}</td>
+          <td>
+            {{last.date}}
+            <br>
+            {{last._id}}
+            </td>
         </tr>
         <tr>
           <td><i class="temperature high big icon"></i> Temperature</td>
           <td>
-            {{last.temp}} &#176C
+            {{last.temperature}} &#176C
           </td>
         </tr>
         <tr>
           <td><i class="percentage big icon"></i> Humidity</td>
           <td>
-            {{last.temp}} %
+            {{last.humidity}} %
           </td>
         </tr>
         <tr>
           <td><i class="chart bar big icon"></i> Pressure</td>
-          <td>{{last.temp}} hPa</td>
+          <td>{{last.pressure}} hPa</td>
         </tr>
         <tr>
           <td><i class="sun big icon"></i> Light</td>
-          <td>{{last.temp}} lux</td>
+          <td>{{last.lux}} lux</td>
         </tr>
         <tr>
           <td><i class="wind big icon"></i> Wind</td>
           <td>
-            {{last.temp}} km/hr
+            {{last.wind_speed}} km/hr
             <br>
-            Direction: {{last.temp}}
+            Direction: {{last.wind_dir}}
           </td>
         </tr>
         <tr>
-          <td><i class="cloud rain big icon"></i> Wind</td>
+          <td><i class="cloud rain big icon"></i> Rain</td>
           <td>
-            {{last.temp}} mm in last 15 mins
+            {{last.rainfall_period}} mm in last 15 mins
             <br>
-            {{last.temp}} mm/hr
+            {{last.rainfall_per_hour}} mm/hr
           </td>
         </tr>
       </tbody>

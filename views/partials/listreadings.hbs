@@ -1,22 +1,44 @@
 <table class="ui fixed table">
     <thead>
         <tr>
-            <th>id</th>
-            <th>temp</th>
-            <th>pressure</th>
+            <th>Date/Time</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>Pressure</th>
+            <th>Light</th>
+            <th>Wind</th>
+            <th>Rain</th>
         </tr>
     </thead>
     <tbody>
         {{#each data}}
         <tr>
             <td>
+                {{date}}
+                <br>
                 {{_id}}
             </td>
             <td>
-                {{temp}}
+                {{temperature}} &#176C
             </td>
             <td>
-                {{pressure}}
+                {{humidity}} %
+            </td>
+            <td>
+                {{pressure}} hPa
+            </td>
+            <td>
+                {{lux}} lux
+            </td>
+            <td>
+                {{wind_speed}} km/hr
+                <br>
+                Direction: {{wind_dir}}
+            </td>
+            <td>
+                {{rainfall_period}} mm in last 15 mins
+                <br>
+                {{rainfall_per_hour}} mm/hr
             </td>
         </tr>
         {{/each}}
