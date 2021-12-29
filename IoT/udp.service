@@ -1,0 +1,14 @@
+[Unit]
+Description=UDPService
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ubuntu/weatherpi-server/IoT/udp_server.py
+WorkingDirectory=/home/ubuntu/weatherpi-server/IoT
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=TCPService
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ubuntu/weatherpi-server/IoT/tcp_server.py
+WorkingDirectory=/home/ubuntu/weatherpi-server/IoT
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
