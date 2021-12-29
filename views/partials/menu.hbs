@@ -1,11 +1,10 @@
-<nav class="ui menu">
-  <header class="ui header item"> Glitch Template 2 </header>
-  <div class="right menu">
-    <a id="dashboard" class="item" href="/dashboard"> Dashboard  </a>
-    <a id="about" class="item" href="/about"> About </a>
-  </div>
-</nav>
 
-<script>
-  $("#{{id}}").addClass("active item");
-</script>
+<h1 class="ui centered header">Weatherpi.ie</h1>
+<div class="ui four item menu">
+        <a id="home" class="item" href="/"> <i class="home icon"></i>Home</a>
+        <a id="thingspeak" class="item" href="/thingspeak"> <i class="comment alternate outline icon"></i>ThingSpeak</a>
+        <a id="archive" class="item" href="/archive"> <i class="history icon"></i>Archive</a>
+        <a id="how" class="item" href="/howitsmade"> <i class="hammer icon"></i>How it's made</a>
+</div>
+
+<script>$("#{{id}}").addClass("active blue item");</script>

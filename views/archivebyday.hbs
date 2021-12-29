@@ -1,0 +1,12 @@
+{{> menu id='archive' }}
+
+<section class="ui segment">
+  <h1 class="ui horizontal center aligned divider header">{{month}}</h1>
+  <section class="ui segments">
+    {{#each data}}
+    <div class="ui segment">
+      <a class="ui fluid button" href="/archive/{{../month}}/{{name}}">{{name}}</a>
+    </div>
+    {{/each}}
+  </section>
+</section>

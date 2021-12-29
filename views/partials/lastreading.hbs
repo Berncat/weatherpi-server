@@ -1,0 +1,49 @@
+<div class="ui inverted card">
+  <div class="content">
+    <h2 class="ui center aligned header">Latest reading</h2>
+    <table class="ui definition table">
+      <tbody>
+        <tr>
+          <td><i class="clock big icon"></i> Date/Time</td>
+          <td>{{last._id}}</td>
+        </tr>
+        <tr>
+          <td><i class="temperature high big icon"></i> Temperature</td>
+          <td>
+            {{last.temp}} &#176C
+          </td>
+        </tr>
+        <tr>
+          <td><i class="percentage big icon"></i> Humidity</td>
+          <td>
+            {{last.temp}} %
+          </td>
+        </tr>
+        <tr>
+          <td><i class="chart bar big icon"></i> Pressure</td>
+          <td>{{last.temp}} hPa</td>
+        </tr>
+        <tr>
+          <td><i class="sun big icon"></i> Light</td>
+          <td>{{last.temp}} lux</td>
+        </tr>
+        <tr>
+          <td><i class="wind big icon"></i> Wind</td>
+          <td>
+            {{last.temp}} km/hr
+            <br>
+            Direction: {{last.temp}}
+          </td>
+        </tr>
+        <tr>
+          <td><i class="cloud rain big icon"></i> Wind</td>
+          <td>
+            {{last.temp}} mm in last 15 mins
+            <br>
+            {{last.temp}} mm/hr
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
